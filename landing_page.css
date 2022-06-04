@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    min-height: 80vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/workerfylogo.jpg);
+    background-position: center;
+    background-size: cover;
+    position: realtive;
+}
+
+nav{
+    display :flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#workerfyimg{
+    width: 150px;
+    height: 60px;
+}
+
+.navlinks{
+    flex: 1;
+    text-align: right;
+    
+}
+
+.navlinks ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+
+.navlinks ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    
+}
+
+.navlinks ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #ff352b;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+     
+}
+
+
+.navlinks ul li:hover::after{
+    width: 100%;
+}
+
+.textbox{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    
+}
+
+.textbox h1{
+    font-size: 70px;
+    color: #ffaadf;
+
+    
+}
+
+.textbox p{
+    margin: 10px 0 40px;
+    font-size: 40px;
+    color: #ffffff;
+}
+
+.visitbtn{
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    border: 2px solid #ffaadf;
+    padding: 12px 34px;
+    font-size: 15px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    
+    
+}
+
+.visitbtn:hover{
+    border: 1px solid #ffaadf;
+    background: #ffaadf;
+    transition: 1s;
+}
+
+.featuresSection{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background: rgb(84,209,216,0.4);
+    
+}
+
+.featuresSection h2{
+    font-size: 40px;
+    margin: 15px;
+}
+
+#feature1{
+    display: flex;
+    justify-content: space-around;
+    align-content: space-between;
+    padding: 20px;
+}
+
+.featImg img{
+    width: 400px;
+}
+
+.featInfo{
+    margin: 20px;
+    line-height: 1.8;
+}
+
+
+#feature2{
+    display: flex;
+    justify-content: space-around;
+    align-content: space-between;
+    padding: 20px;
+    background: rgb(189,244,13,0.8);
+}
+
+.below{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.below img{
+    width: 300px;
+    height: 350px;
+    margin: 10px;
+    
+}
+
+
+#feature3{
+    display: flex;
+    justify-content: space-around;
+    align-content: space-between;
+    padding: 20px;
+}
+
+.inspiration{
+    margin: 20px;
+    align-text: center;
+    background-image: url(images/inspired.jpg);
+    background-position: center;
+    background-size: cover;
+    position: realtive;
+    color: #ffffff;
+    text-align: center;
+}
+
+.socialme img{
+    width: 100px;
+    margin: 40px;
+}
+
+.inspiration h3{
+    font-size: 35px;
+}
+
+.inspiration h2{
+    font-size: 45px;
+}
+
+.inspiration p{
+    font-size: 20px;
+}
+
+.aboutworkerfy{
+    margin: 20px;
+}
+
+
+@media(max-width: 700px){
+    .inspiration p{
+	font-size: 15px;
+    }
+
+    .socialme img{
+	width: 50px;
+	margin: 20px;
+    }
+    
+    .textbox h1{
+	font-size: 35px;
+	color: #ffaadf;
+    } 
+    
+    .textbox p{
+	margin: 10px 0 40px;
+	font-size: 20px;
+	color: #ffffff;
+    }
+
+    .inspiration{
+	margin: 0;
+    }
+    
+    #feature2{
+	display: block;
+    }
+    
+    
+    #feature1{
+	display: block;
+    }
+    
+    
+    #feature3{
+	display: block;
+    }
+    
+    .featImg img{
+	width: 200px;
+    }
+
+
+    .below img{
+	width: 95px;
+	height: 150px;
+    }
+    
+    .featuresSection{
+	margin: 0;
+    }
+    
+}
+
